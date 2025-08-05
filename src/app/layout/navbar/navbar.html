@@ -1,0 +1,32 @@
+<!-- Header -->
+<header class="bg-mujallad-white py-4 px-6 shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <div class="flex items-center">
+      <h1 class="font-heading text-2xl font-bold text-mujallad-charcoal">
+        <a href="#home">MUJALLAD</a>
+      </h1>
+    </div>
+
+    <nav class="hidden md:flex space-x-8">
+      <a routerLink="/home" class="nav-link font-medium">Home</a>
+      <a routerLink="/book-cover-collection" class="nav-link font-medium">Catalog</a>
+      <a routerLink="/shoping-cart" class="nav-link font-medium">Cart</a>
+      <a routerLink="/dashboard" class="nav-link font-medium">Account</a>
+    </nav>
+
+    <div class="flex items-center space-x-6">
+      <div class="relative cursor-pointer">
+        <fa-icon [icon]="faSearch" class="text-mujallad-charcoal"></fa-icon>
+      </div>
+      <a href="#cart" class="relative cart-icon" data-count="3">
+        <fa-icon [icon]="faShoppingCart" class="text-mujallad-charcoal"></fa-icon>
+      </a>
+      <a href="#dashboard" class="cursor-pointer">
+        <fa-icon [icon]="faUser" class="text-mujallad-charcoal"></fa-icon>
+      </a>
+      <div class="md:hidden cursor-pointer">
+        <fa-icon [icon]="faBars" class="text-mujallad-charcoal"></fa-icon>
+      </div>
+    </div>
+  </div>
+</header>

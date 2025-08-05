@@ -1,0 +1,121 @@
+<section id="product-detail" class="page">
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="mb-8">
+      <a href="#catalog" class="text-[var(--mujallad-sage)] hover:underline">&larr; Back to Catalog</a>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-12">
+      <!-- Product Gallery -->
+      <div class="lg:w-1/2">
+        <div class="gallery-main" id="main-image">
+          <div class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-[500px]"></div>
+        </div>
+
+        <div class="mt-4 flex space-x-4 overflow-x-auto py-2">
+          <a href="#main-image" class="gallery-thumb">
+            <div class="bg-gray-200 border-2 border-dashed rounded-xl w-24 h-24"></div>
+          </a>
+          <a href="#image-2" class="gallery-thumb">
+            <div class="bg-gray-200 border-2 border-dashed rounded-xl w-24 h-24"></div>
+          </a>
+          <a href="#image-3" class="gallery-thumb">
+            <div class="bg-gray-200 border-2 border-dashed rounded-xl w-24 h-24"></div>
+          </a>
+          <a href="#image-4" class="gallery-thumb">
+            <div class="bg-gray-200 border-2 border-dashed rounded-xl w-24 h-24"></div>
+          </a>
+
+        </div>
+
+        <!-- Hidden images for gallery -->
+       
+      </div>
+
+      <!-- Product Info -->
+      <div class="lg:w-1/2">
+        <div>
+          <h1 class="font-heading text-4xl font-bold mb-2">Botanical Heritage Cover</h1>
+          <div class="flex items-center mb-4">
+            <div class="flex text-[var(--mujallad-sage)]">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="ml-2 text-gray-600">(24 reviews)</span>
+          </div>
+
+          <p class="text-2xl font-bold text-[var(--mujallad-charcoal)] mb-6">$79.99</p>
+
+          <p class="text-gray-700 mb-8">
+            This exquisite book cover features pressed botanical elements encased in premium linen.
+            Each cover is unique, with natural variations in the botanical arrangement. The cover
+            includes a debossed title area for your book's name and author.
+          </p>
+
+          <div class="mb-8">
+            <h3 class="font-semibold text-lg mb-3">Book Size</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="size-option active">Paperback (5.5" x 8.5")</span>
+              <span class="size-option">Hardcover (6" x 9")</span>
+              <span class="size-option">Large Format (7" x 10")</span>
+            </div>
+          </div>
+
+          <div class="flex items-center mb-8">
+            <div class="mr-4">
+              <h3 class="font-semibold text-lg mb-2">Quantity</h3>
+              <div class="flex items-center border border-[var(--mujallad-beige)] rounded">
+                <button class="quantity-btn">-</button>
+                <span class="px-4">1</span>
+                <button class="quantity-btn">+</button>
+              </div>
+            </div>
+
+            <div>
+              <button class="btn btn-primary px-8 py-3 font-medium">
+                <i class="fas fa-shopping-cart mr-2"></i>Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <div class="border-t border-[var(--mujallad-beige)] pt-6">
+            <h3 class="font-semibold text-lg mb-3">Product Details</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li><strong>Material:</strong> Premium linen with pressed botanicals</li>
+              <li><strong>Binding:</strong> Hand-stitched for durability</li>
+              <li><strong>Customization:</strong> Debossed title area</li>
+              <li><strong>Care:</strong> Wipe clean with dry cloth</li>
+              <li><strong>Eco-Friendly:</strong> Sustainably sourced materials</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Related Products -->
+    <div class="mt-16">
+      <h3 class="font-heading text-2xl font-bold mb-8">You May Also Like</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Repeat product card 4 times -->
+        <!-- <a href="#product-detail" class="product-card bg-[var(--mujallad-cream)] rounded-lg overflow-hidden shadow-md">
+                            <div class="relative">
+                                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-full h-56"></div>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="font-heading font-semibold mb-1">Vintage Elegance</h4>
+                                <p class="text-gray-600 text-sm mb-2">Leather-bound cover</p>
+                                <span class="font-bold">$89.99</span>
+                            </div>
+                        </a> -->
+        <app-card-component></app-card-component>
+        <app-card-component></app-card-component>
+        <app-card-component></app-card-component>
+        <app-card-component></app-card-component>
+      </div>
+    </div>
+  </div>
+</section>

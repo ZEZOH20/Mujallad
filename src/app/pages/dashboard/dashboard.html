@@ -1,0 +1,36 @@
+
+
+    <!-- User Dashboard -->
+        <section id="dashboard" class="page">
+            <div class="max-w-7xl mx-auto px-4 scroll-py-16">
+                <h1 class="font-heading text-3xl font-bold mb-8">Your Account</h1>
+
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <!-- Dashboard Navigation -->
+                    <div class="lg:w-1/4">
+                        <div class="bg-white rounded-lg shadow-sm p-6">
+                            <div class="flex items-center mb-6">
+                                <div class="bg-gray-200 border-2 border-dashed rounded-full w-16 h-16 mr-4"></div>
+                                <div>
+                                    <h3 class="font-bold">Sarah Johnson</h3>
+                                    <p class="text-sm text-gray-600">sarah@example.com</p>
+                                </div>
+                            </div>
+
+                            <nav class="dashboard-nav space-y-3">
+                                <a routerLink="dashboard" class="block p-3 rounded hover:bg-mujallad-beige active">Orders</a>
+                                <a routerLink="dashboard/addresses" class="block p-3 rounded hover:bg-mujallad-beige">Addresses</a>
+                                <a routerLink="dashboard/wishlist" class="block p-3 rounded hover:bg-mujallad-beige">Wishlist</a>
+                                <a routerLink="dashboard/account-settings" class="block p-3 rounded hover:bg-mujallad-beige">Account Settings</a>
+                                <a routerLink="home" class="block p-3 rounded hover:bg-mujallad-beige text-mujallad-sage">Logout</a>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Dashboard Content -->
+                    <div class="lg:w-3/4">
+                        <router-outlet></router-outlet>
+                    </div>
+                </div>
+            </div>
+        </section>

@@ -1,0 +1,135 @@
+<section id="cart" class="page">
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <h1 class="font-heading text-3xl font-bold mb-8">Your Shopping Cart</h1>
+
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Cart Items -->
+      <div class="lg:w-2/3">
+        <div class="bg-white rounded-lg shadow-sm p-6">
+          <div class="hidden md:grid grid-cols-12 gap-4 border-b border-mujallad-beige pb-4 mb-4">
+            <div class="col-span-6 font-semibold">Product</div>
+            <div class="col-span-2 font-semibold">Price</div>
+            <div class="col-span-2 font-semibold">Quantity</div>
+            <div class="col-span-2 font-semibold text-right">Total</div>
+          </div>
+
+          <!-- Cart Item 1 -->
+          <div class="cart-item grid grid-cols-1 md:grid-cols-12 gap-4 py-6 border-b border-mujallad-beige">
+            <div class="col-span-6 flex">
+              <div class="bg-gray-200 border-2 border-dashed rounded-xl w-24 h-24 mr-4"></div>
+              <div>
+                <h3 class="font-semibold">Botanical Heritage Cover</h3>
+                <p class="text-gray-600 text-sm">Linen with pressed botanicals</p>
+                <p class="text-sm mt-2">Size: Hardcover (6" x 9")</p>
+              </div>
+            </div>
+            <div class="col-span-2 flex items-center">
+              <span class="font-semibold">$79.99</span>
+            </div>
+            <div class="col-span-2 flex items-center">
+              <div class="flex items-center border border-mujallad-beige rounded">
+                <button class="quantity-btn">-</button>
+                <span class="px-4">1</span>
+                <button class="quantity-btn">+</button>
+              </div>
+            </div>
+            <div class="col-span-2 flex items-center justify-between">
+              <span class="font-semibold">$79.99</span>
+              <span class="remove-item text-gray-400 hover:text-[var(--mujallad-sage)] ml-4">
+                <i class="fas fa-trash"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Cart Item 2 -->
+          <div class="cart-item grid grid-cols-1 md:grid-cols-12 gap-4 py-6">
+            <div class="col-span-6 flex">
+              <div class="bg-gray-200 border-2 border-dashed rounded-xl w-24 h-24 mr-4"></div>
+              <div>
+                <h3 class="font-semibold">Vintage Elegance Cover</h3>
+                <p class="text-gray-600 text-sm">Leather with gold foil detailing</p>
+                <p class="text-sm mt-2">Size: Large Format (7" x 10")</p>
+              </div>
+            </div>
+            <div class="col-span-2 flex items-center">
+              <span class="font-semibold">$89.99</span>
+            </div>
+            <div class="col-span-2 flex items-center">
+              <div class="flex items-center border border-mujallad-beige rounded">
+                <button class="quantity-btn">-</button>
+                <span class="px-4">2</span>
+                <button class="quantity-btn">+</button>
+              </div>
+            </div>
+            <div class="col-span-2 flex items-center justify-between">
+              <span class="font-semibold">$179.98</span>
+              <span class="remove-item text-gray-400 hover:text-[var(--mujallad-sage)] ml-4">
+                <i class="fas fa-trash"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="pt-6 flex justify-between">
+            <a href="#catalog" class="btn btn-outline px-6 py-3">
+              <i class="fas fa-arrow-left mr-2"></i>Continue Shopping
+            </a>
+            <button class="btn btn-outline px-6 py-3">
+              Update Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Coupon Code -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mt-6">
+          <h3 class="font-semibold text-lg mb-3">Apply Coupon Code</h3>
+          <div class="flex">
+            <input type="text" placeholder="Enter coupon code"
+              class="flex-grow border border-mujallad-beige rounded-l px-4 py-3 focus:outline-none">
+            <button class="btn btn-primary px-6 py-3 rounded-l-none">Apply</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="lg:w-5/12">
+        <div class="bg-white rounded-lg shadow-sm p-6 sticky top-24">
+          <h3 class="font-heading text-xl font-bold mb-6">Order Summary</h3>
+
+          <div class="space-y-4 mb-6">
+            <div class="flex justify-between">
+              <span>Subtotal</span>
+              <span>$259.97</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Shipping</span>
+              <span>$12.99</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Tax</span>
+              <span>$20.80</span>
+            </div>
+            <div class="flex justify-between border-t border-mujallad-beige pt-4">
+              <span class="font-semibold">Total</span>
+              <span class="font-bold text-lg">$293.76</span>
+            </div>
+          </div>
+
+          <div class="flex">
+            <app-button-component text="Proceed Checkout" (onClick)="handleClick()"></app-button-component>
+            <app-button-component text="Continue Shopping" [regularFrame]="true"></app-button-component>
+          </div>
+
+          <div class="mt-6 pt-6 border-t border-mujallad-beige">
+            <h4 class="font-semibold mb-3">Accepted Payment Methods</h4>
+            <div class="flex space-x-3">
+              <div class="bg-gray-200 border-2 border-dashed rounded-xl w-12 h-8"></div>
+              <div class="bg-gray-200 border-2 border-dashed rounded-xl w-12 h-8"></div>
+              <div class="bg-gray-200 border-2 border-dashed rounded-xl w-12 h-8"></div>
+              <div class="bg-gray-200 border-2 border-dashed rounded-xl w-12 h-8"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

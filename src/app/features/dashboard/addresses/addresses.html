@@ -1,0 +1,114 @@
+<!-- Addresses -->
+
+
+<div id="dashboard-addresses">
+  <div class="bg-white rounded-lg shadow-sm p-6">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="font-heading text-2xl font-bold">Your Addresses</h2>
+      <button class="btn btn-primary px-4 py-2">
+        <i class="fas fa-plus mr-2"></i>Add New Address
+      </button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Address Card 1 -->
+      <div class="address-card selected">
+        <div class="flex justify-between items-start mb-3">
+          <h3 class="font-semibold">Primary Address</h3>
+          <div class="flex space-x-2">
+            <button class="text-mujallad-sage hover:text-mujallad-charcoal">
+              <i class="fas fa-edit"></i>
+            </button>
+            <button class="text-red-400 hover:text-red-600">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+        </div>
+        <div class="text-gray-700">
+          <p>Sarah Johnson</p>
+          <p>123 Bookworm Lane</p>
+          <p>San Francisco, CA 94110</p>
+          <p class="mt-2">United States</p>
+          <p>Phone: (555) 123-4567</p>
+        </div>
+        <div class="mt-4">
+          <span class="bg-mujallad-sage text-white text-xs px-2 py-1 rounded">Default Shipping</span>
+        </div>
+      </div>
+
+      <!-- Address Card 2 -->
+      <div class="address-card">
+        <div class="flex justify-between items-start mb-3">
+          <h3 class="font-semibold">Work Address</h3>
+          <div class="flex space-x-2">
+            <button class="text-mujallad-sage hover:text-mujallad-charcoal">
+              <i class="fas fa-edit"></i>
+            </button>
+            <button class="text-red-400 hover:text-red-600">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+        </div>
+        <div class="text-gray-700">
+          <p>Sarah Johnson</p>
+          <p>456 Publishing Avenue</p>
+          <p>San Francisco, CA 94105</p>
+          <p class="mt-2">United States</p>
+          <p>Phone: (555) 987-6543</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Address Form -->
+    <div class="mt-8 border-t border-mujallad-beige pt-8">
+      <h3 class="font-heading text-xl font-bold mb-6">Add New Address</h3>
+
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block font-medium mb-2">Full Name</label>
+          <input type="text" class="form-input" placeholder="John Doe">
+        </div>
+        <div>
+          <label class="block font-medium mb-2">Phone Number</label>
+          <input type="tel" class="form-input" placeholder="(555) 123-4567">
+        </div>
+        <div>
+          <label class="block font-medium mb-2">Address Line 1</label>
+          <input type="text" class="form-input" placeholder="123 Main St">
+        </div>
+        <div>
+          <label class="block font-medium mb-2">Address Line 2 (Optional)</label>
+          <input type="text" class="form-input" placeholder="Apt, suite, etc.">
+        </div>
+        <div>
+          <label class="block font-medium mb-2">City</label>
+          <input type="text" class="form-input" placeholder="San Francisco">
+        </div>
+        <div>
+          <label class="block font-medium mb-2">State/Province</label>
+          <input type="text" class="form-input" placeholder="California">
+        </div>
+        <div>
+          <label class="block font-medium mb-2">ZIP/Postal Code</label>
+          <input type="text" class="form-input" placeholder="94110">
+        </div>
+        <div>
+          <label class="block font-medium mb-2">Country</label>
+          <select class="form-input">
+            <option>United States</option>
+            <option>Canada</option>
+            <option>United Kingdom</option>
+            <option>Australia</option>
+          </select>
+        </div>
+        <div class="md:col-span-2 flex items-center">
+          <input type="checkbox" id="default-address" class="mr-3">
+          <label for="default-address">Set as default shipping address</label>
+        </div>
+        <div class="md:col-span-2">
+          <button type="submit" class="btn btn-primary px-6 py-3">Save Address</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

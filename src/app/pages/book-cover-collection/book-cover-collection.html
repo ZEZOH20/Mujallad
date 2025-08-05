@@ -1,0 +1,45 @@
+
+       <!-- Catalog Page -->
+        <section id="catalog" class="page">
+            <div class="max-w-7xl mx-auto px-4 py-16">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/4">
+                        <app-filter-component></app-filter-component>
+                    </div>
+                    <!-- Products -->
+                    <div class="md:w-3/4">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+                            <div>
+                                <h2 class="font-heading text-3xl font-bold">Book Cover Collection</h2>
+                                <p class="text-gray-600 mt-2">Showing 24 of 86 products</p>
+                            </div>
+
+                            <div class="mt-4 md:mt-0">
+                                <div class="flex items-center">
+                                    <span class="mr-3">Sort by:</span>
+                                    <select class="border border-mujallad-beige rounded px-4 py-2 focus:outline-none">
+                                        <option>Featured</option>
+                                        <option>Price: Low to High</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Newest Arrivals</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Repeat product card 6 times -->
+                                <app-card-component></app-card-component>
+                                <app-card-component></app-card-component>
+                                <app-card-component></app-card-component>
+                                <app-card-component></app-card-component>
+                                <app-card-component></app-card-component>
+                                <app-card-component></app-card-component>
+                        </div>
+
+                        <app-pagination-component></app-pagination-component>
+
+                    </div>
+                </div>
+            </div>
+        </section>
