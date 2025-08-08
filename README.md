@@ -63,4 +63,4 @@ It is a **front-end only** project created to showcase the layout and visual sty
 
 ### 9. wishlist Page
 
-![Favourite Page](screens/favourite.jpeg)
+![Favourite Page](screens/wishlist.jpeg)
