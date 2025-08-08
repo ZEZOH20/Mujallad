@@ -1,59 +1,66 @@
-# Mujallad
+# Mujaled Demo Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.0.
+This is the **Mujaled** demo website design, built using **Angular** and **Tailwind CSS**.  
+It is a **front-end only** project created to showcase the layout and visual style — no backend or CRUD functionality is implemented.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Pages Designed
 
-```bash
-ng serve
-```
+- **Home Page** – Showcases products and highlights.
+- **Cart Page** – Displays items added by the user (static demo).
+- **Product Details Page** – Static product information view.
+- **Checkout Page** – Visual flow for checkout.
+- **Dashboard Page** – Demo admin/user overview.
+- **Profile Page** – Static profile layout.
+- **Favourite Page** – Demo list of saved products.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🛠️ Tech Stack
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Angular** – Front-end framework.
+- **Tailwind CSS** – Utility-first CSS framework.
+- **Responsive Design** – Optimized for desktop, tablet, and mobile.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 📸 Screenshots
 
-```bash
-ng generate --help
-```
+> All screenshots are from the demo design (no live data or functionality).
 
-## Building
+### 1. Home Page
 
-To build the project run:
+![Home Page](screens/home.jpeg)
 
-```bash
-ng build
-```
+### 2. catalog Page
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+![catalog Page](screens/catalog.jpeg)
 
-## Running unit tests
+### 3. Cart Page
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+![Cart Page](screens/cart.jpeg)
 
-```bash
-ng test
-```
+### 4. Product Details Page
 
-## Running end-to-end tests
+![Product Details Page](screens/product-details.jpeg)
 
-For end-to-end (e2e) testing, run:
+### 5. Checkout Page
 
-```bash
-ng e2e
-```
+![Checkout Page](screens/checkout.jpeg)
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### 6. Dashboard Page
 
-## Additional Resources
+![Dashboard Page](screens/dashboard.jpeg)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 7. Profile Page
+
+![Profile Page](screens/profile.jpeg)
+
+### 8. addresses Page
+
+![addresses Page](screens/addresses.jpeg)
+
+### 9. wishlist Page
+
+![Favourite Page](screens/favourite.jpeg)
